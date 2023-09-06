@@ -1,0 +1,173 @@
+{
+	"info": {
+		"_postman_id": "8cb81164-a131-41cc-8a60-32d50a86cb1e",
+		"name": "Cotizacion2.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29412931",
+		"_collection_link": "https://winter-star-960857.postman.co/workspace/New-Team-Workspace~e9b33b50-81af-46da-afcf-a139bf0963c2/collection/29412931-8cb81164-a131-41cc-8a60-32d50a86cb1e?action=share&source=collection_link&creator=29412931"
+	},
+	"item": [
+		{
+			"name": "Consultar cotizaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cotizaciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cotizaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar cotizaciones por orden fecha",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cotizaciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cotizaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar cotizaciones por orden price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cotizaciones/orderPriceQuery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cotizaciones",
+						"orderPriceQuery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar cotizaciones por orden name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cotizaciones/orderNameQuery",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cotizaciones",
+						"orderNameQuery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar cotizaciones",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cotizaciones/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cotizaciones",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear cotizaciones",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"id\": 2,\r\n        \"date\": \"2021-02-05\",\r\n        \"price\": 700,\r\n        \"exchange_rate\": \"BCV\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cotizaciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cotizaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Modificar cotizaciones",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"id\": 5,\r\n        \"date\": \"2021-02-05\",\r\n        \"price\": 8000,\r\n        \"exchange_rate\": \"BCV\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cotizaciones/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cotizaciones",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

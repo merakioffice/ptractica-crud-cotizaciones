@@ -53,6 +53,15 @@ CotizacionDAO cotizacionDAO;
         return cotizacionDAO.orderByDate();
     }
 
+    @RequestMapping(value="api/cotizaciones/orderPriceQuery",method = RequestMethod.GET)
+    public List<Cotizacion> getForPriceQuery(){
+        return cotizacionDAO.orderByPrice();
+    }
+    @RequestMapping(value="api/cotizaciones/orderNameQuery",method = RequestMethod.GET)
+    public List<Cotizacion> getForNameQuery(){
+        return cotizacionDAO.orderByName();
+    }
+
 
 
 

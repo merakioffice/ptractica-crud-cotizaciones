@@ -67,8 +67,12 @@ public class CotizacionDAO implements DAO{
     }
 
     @Override
-    public List<Cotizacion> orderByRangeDate() {
-        String query ="FROM Cotizacion WHERE date BETWEEN 'start_date' AND 'end_date'";
+    public List<Cotizacion> orderByRangeDate(String fecha) {
+        //String query ="FROM Cotizacion WHERE date BETWEEN 'start_date' AND 'end_date'";
+        String query = "FROM Cotizacion WHERE date > :date";
+        List<Cotizacion> cotizaciones = em.createQuery(query, Cotizacion.class)
+                .setParameter("date", fecha)
+                .getResultList();
         return em.createQuery(query).getResultList();
     }
 

@@ -23,7 +23,7 @@ public interface DAO {
 
     public List<Cotizacion> orderByName();
 
-    public List<Cotizacion> orderByRangeDate();
+    public List<Cotizacion> orderByRangeDate(String fecha);
 
 
 
